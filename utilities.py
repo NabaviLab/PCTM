@@ -2,7 +2,7 @@
 import torch
 import torch.nn as nn
 
-# Channel Attention Module, often used in CNN architectures to enhance feature representation
+# Channel Attention Module
 class ChannelAttention(nn.Module):
     def __init__(self, in_planes, ratio=16):
         super(ChannelAttention, self).__init__()
