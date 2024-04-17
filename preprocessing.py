@@ -2,7 +2,7 @@ import os
 import cv2
 import numpy as np
 
-# Preprocessing functions remain the same
+# Preprocessing functions
 
 def morphological_operations(original_image, operation='open', kernel_size=4, iterations=2):
     kernel = np.ones((kernel_size, kernel_size), np.uint8)
