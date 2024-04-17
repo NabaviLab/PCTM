@@ -48,8 +48,8 @@ def preprocess_images_in_folder(folder_path, output_folder):
             cv2.imwrite(save_path, final_image)
 
 # Specify the source folder and destination folder for preprocessed images
-src_folder = "mPC/Prior"  # Update this path to your folder containing 4 images
-dest_folder = "mPC/Final"  # Update this path to where you want to save the preprocessed images
+src_folder = "mPC/Prior"
+dest_folder = "mPC/Final"
 
 # Preprocess the images
 preprocess_images_in_folder(src_folder, dest_folder)
