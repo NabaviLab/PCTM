@@ -94,8 +94,8 @@ class TwinResTransformer(nn.Module):
 
         x = torch.cat((x1, x2), dim=1)
         
-        # Positional encoding and transformer encoder can be applied here if necessary
-        # x = self.positional_encoding(x)
+        # Positional encoding and transformer encoder
+        x = self.positional_encoding(x)
         x = self.transformer_encoder(x.unsqueeze(1))
         
         x = self.channel_attention(x.squeeze(1))
